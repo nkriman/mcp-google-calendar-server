@@ -6,17 +6,26 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
-    "googleapis": "^144.0.0",
-    "google-auth-library": "^9.0.0"
+    "google-auth-library": "^9.0.0",
+    "googleapis": "^144.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "jest": "^30.0.2",
     "nodemon": "^3.0.0"
   },
-  "keywords": ["mcp", "google-calendar", "calendar", "events"],
+  "keywords": [
+    "mcp",
+    "google-calendar",
+    "calendar",
+    "events"
+  ],
   "author": "",
   "license": "MIT"
 }
