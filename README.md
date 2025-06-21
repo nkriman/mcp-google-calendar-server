@@ -28,7 +28,7 @@ A Model Context Protocol (MCP) server for creating Google Calendar events.
      "mcpServers": {
        "google-calendar": {
          "command": "node",
-         "args": ["/Users/krilet/mcp-google-calendar-server/src/index.js"]
+         "args": ["./src/index.js"]
        }
      }
    }
