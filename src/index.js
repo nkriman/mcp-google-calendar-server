@@ -551,5 +551,9 @@ class GoogleCalendarMCPServer {
   }
 }
 
-const server = new GoogleCalendarMCPServer();
-server.run().catch(console.error);
+export default GoogleCalendarMCPServer;
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  const server = new GoogleCalendarMCPServer();
+  server.run().catch(console.error);
+}
