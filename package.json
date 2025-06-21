@@ -1,0 +1,22 @@
+{
+  "name": "mcp-google-calendar-server",
+  "version": "1.0.0",
+  "description": "MCP server for creating Google Calendar events",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "googleapis": "^144.0.0",
+    "google-auth-library": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "keywords": ["mcp", "google-calendar", "calendar", "events"],
+  "author": "",
+  "license": "MIT"
+}
